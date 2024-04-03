@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    transition: 2s linear !important;
+}
+
+body{
+    /* background-image: url('https://www.w3schools.com/css/img_lights.jpg'); */
+    /* background-image: url('img/2.png'); */
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+    background: #282c34 !important;
+    color: white !important;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 10rem;
+    background-color: #282c34;
+}
+
+.navbar-brand{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem !important;
+    color:dimgray !important;
+}
+
+.nav-class{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 30rem;
+    margin-top: -50px;
+}
+
+.nav-class a{
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+} 
+
+.nav-class a:hover{
+    color: dimgray;
+    font-weight: bold;
+}
+
+.nav-class a.active{
+    color:darkslategray;
+    font-weight: bold;
+}
+
+/*Hero section*/
+.container{
+    margin-top: 100px;
+}
+
+.text{
+    margin-top: 350px !important;
+    margin-left: -30px;
+    padding: 70px;
+    /* border: 1px solid #333 !important; */
+    background-color: #ffffff10;
+    border-radius: 110px 10px !important;
+}
+
+.image{
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+.image img{
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+}
+
+/* About section */
+.about{
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+.about h2{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: 'playfair display', serif;
+}
+
+.about .lang{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(150px , 1fr));
+}
+
+.lang-list{
+    margin: 20px;
+    padding-top: 20px;
+    background-color: #ffffff10;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.lang-list p{
+    font-size: 16px;
+    color: white;
+    font-family: 'playfair display', serif;
+    padding: 5px;
+}
+/*Services section*/
+.services{
+    margin-top: 100px;
+    padding: 50px;
+}
+
+.services-offered{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(300px , 1fr));
+}
+
+.service{
+    margin: 50px;
+    padding: 20px;
+    background-color: #ffffff10;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.service img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+
+/* contact section  */
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: transparent;
+    margin-top: -100px;
+}
+
+#contact h2{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    padding: 100px;
+}
+
+#contact span{
+    color: #ff007f;
+}
+
+.contact form{
+    width: 600px;
+    text-align: center;
+}
+
+form .input-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-box .input-field{
+    width: 45%;
+}
+
+.field .item{
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid #ffffff10;
+    outline: none;
+    border-radius: 25px;
+    color: white;
+    margin: 12px 0;
+}
+
+form .textarea-field .item{
+    resize: none;
+}
+
+form button{
+    padding: 12px 32px;
+    background: #ffffff10;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #ffffff10;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: .5s;
+}
+
+form button:hover{
+    box-shadow: none; 
+}
+
+.field.error .item{
+    border-color: #d93025;
+}
+
+.field .error-txt{
+    font-size:14.5px ;
+    color: #d93025;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+}
+
+.field.error .error-txt{
+    display: block;
+}
+
+form .textarea-field .error-txt{
+    margin-top: -10px;
+}
+
+/* footer */
+footer .footer-text{
+    text-align: center;
+    margin-bottom: -90px;
+    font-size: 1rem;
+}
+
+.footer-iconTop a {
+    padding-left: 1100px;
+    margin-top: -20px;
+    margin-bottom: -90px;
+    color: white;
+}
