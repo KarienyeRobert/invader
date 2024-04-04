@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    transition: 2s linear !important;
 }
 
 body{
@@ -15,6 +14,10 @@ body{
     background-repeat: no-repeat; */
     background: #282c34 !important;
     color: white !important;
+    /* transform: scale(1); */
+    transition: 2s linear !important;
+    font-size: 100% !important;
+
 }
 
 .navbar{
@@ -39,6 +42,12 @@ body{
     margin-top: -50px;
 }
 
+.nav-class ul{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+}
+
 .nav-class a{
     color: white;
     text-decoration: none;
@@ -53,6 +62,11 @@ body{
 .nav-class a.active{
     color:darkslategray;
     font-weight: bold;
+}
+
+.nav-class span{
+    margin-left: 370px;
+    display: none;
 }
 
 /*Hero section*/
@@ -84,11 +98,11 @@ body{
 .about{
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 170px;
     margin-left: 20px;
 }
 
-.about h2{
+h2{
     font-size: 40px;
     color: white;
     text-align: center;
@@ -246,4 +260,65 @@ footer .footer-text{
     margin-top: -20px;
     margin-bottom: -90px;
     color: white;
+}
+
+
+
+/* Ressponsive screens */
+@media screen and (max-width: 900px){
+    body{
+        font-size: 95% !important;
+        overflow-x: hidden;
+    }
+    .nav-class{
+        margin-left: 300px;
+    }
+/* hero section */
+    .text{
+      width: 700px !important;
+      margin-left: 20px;
+      margin-bottom: 30px;
+    }
+
+    .image{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    body{
+        font-size: 120% !important;
+        overflow-x: hidden;
+    }
+    .nav-class{
+        margin-left: 200px;
+    }
+/* hero section */
+    .text{
+      width: 600px !important;
+      margin-left: 100px;
+      margin-top: 300px !important;
+      font-size: 16px;
+    } 
+}
+
+@media screen and (max-width: 600px){
+    body{
+        font-size: 85% !important;
+        overflow-x: hidden;
+        justify-content: center;
+        text-align: center;
+        margin: 50px;
+    }
+    .nav-class{
+        display: none;
+    }
+
+    .nav-class span{
+        display: block;
+        margin-right: 0px;
+        margin-top: 0px;
+        font-size: 20px;
+        color: white;
+    }
 }

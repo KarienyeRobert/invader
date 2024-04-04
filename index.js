@@ -1,3 +1,16 @@
+  // Add a click event listener to tab links
+  document.addEventListener("DOMContentLoaded", function () {
+    const tabLinks = document.querySelectorAll(".navbar .nav-class li a");
+    tabLinks.forEach((link) => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        tabLinks.forEach((tab) => tab.classList.remove("active"));
+        this.classList.add("active");
+        window.location.href = this.getAttribute("href");
+      });
+    });
+  });
+  
 //contact email send section
 
 const form=document.querySelector('form');
